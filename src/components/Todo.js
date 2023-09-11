@@ -28,8 +28,8 @@ function Todo() {
     setInputValue("");
   };
 
-  const handlepath = () => {
-    navigate("/list-detail");
+  const handlepath = (data) => {
+    navigate(`/list-detail/${data}`);
   };
 
   return (
@@ -64,7 +64,7 @@ function Todo() {
         {arry.map((item, index) => {
           return (
             <div key={index} className="box-list">
-              <div className="box-task" onClick={handlepath}>
+              <div className="box-task" onClick={() => handlepath(item)}>
                 <p>No task</p>
               </div>
               <h3>{item}</h3>
