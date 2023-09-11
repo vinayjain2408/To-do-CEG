@@ -14,7 +14,6 @@ function App() {
         <Route path='/list-detail/:inputvalue' element={<Detail />}/>
       </Routes>
     </BrowserRouter>
-   
   );
 }
 

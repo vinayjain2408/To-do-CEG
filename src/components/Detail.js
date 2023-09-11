@@ -109,11 +109,6 @@ export default Detail;
 
 
 
-
-
-
-
-
 // import React, { useState } from "react";
 // import "./Detail.css";
 // import { useParams } from "react-router-dom";

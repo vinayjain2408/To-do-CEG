@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import "./Navbar.css"
-// import { PhotoshopPicker      } from 'react-color'
 import { SketchPicker } from 'react-color'
 import ColorLensIcon from '@mui/icons-material/ColorLens';
 
@@ -34,6 +33,7 @@ function Navbar() {
             <li><a href='' onClick={handleColor}><ColorLensIcon /></a></li>
             {
               show ? <span className='color-sheet'>
+
                 <SketchPicker
                color={currectColor}
                onChangeComplete={ handleChangeComplete }
