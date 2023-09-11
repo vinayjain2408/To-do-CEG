@@ -1,0 +1,26 @@
+.Detail-page{
+    padding-top: 2rem;
+    height: 100vh;
+    background-color: rgba(26, 25, 25, 0.693);
+}
+.List-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    background-color: #fff;
+    /* background-color: rgba(0, 0, 0, 0.701); */
+    height: 50px;
+    width: 420px;
+}
+.List-input input{
+    padding: 15px 182px 15px 15px;
+    border: none;
+    font-size: 16px;
+}
+.boxex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
