@@ -15,14 +15,12 @@ function Detail() {
   const { inputvalue } = useParams();
   const [adding, setAdding] = useState(false);
   const [valueinp, setValue] = useState(inputvalue);
-  const [showCalendar, setShowCalendar] = useState(false); // Track whether to show the calendar
-
+  const [showCalendar, setShowCalendar] = useState(false);
   const handleChange = (e) => {
     setValue(e.target.value);
   };
 
   const handleSelectChange = (e) => {
-    // setValue(e.target.value);
     setShowCalendar(e.target.value === 'date');
   };
 
@@ -30,6 +28,9 @@ function Detail() {
     console.log("vinay jain");
     setAdding(true);
   };
+  const handleDelete = ()=>{
+    setAdding(false)
+  }
 
   return (
     <div className="Detail-page">
@@ -79,7 +80,7 @@ function Detail() {
                           <option value="Medium">Medium</option>
                           <option value="Low">Low</option>
                         </select>
-                        <button>Delete</button>
+                        <button onClick={handleDelete}>Delete</button>
                       </div>
                     </div>
                   </div>
