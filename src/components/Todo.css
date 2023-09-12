@@ -50,10 +50,12 @@
 
 .multilist {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .box-list h3 {
-    margin-left: 55px;
+    /* margin-left: 55px; */
+    text-align: center;
 }
 
 .box-task {

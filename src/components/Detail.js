@@ -19,7 +19,7 @@ function Detail() {
   const handleEdit = (e, index) => {
     const updatedInputList = inputList.map((item, i) => {
       if (i === index) {
-        return e.target.value; // Update the value at the specified index
+        return e.target.value;
       }
       return item;
     });

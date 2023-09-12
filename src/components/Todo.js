@@ -79,6 +79,7 @@ function Todo() {
         {arry.map((item, index) => {
           return (
             <div key={index} className="box-list">
+              <input type="checkbox" />
               <div className="box-task" onClick={() => handlepath(item)}>
                 <p>No task</p>
               </div>
