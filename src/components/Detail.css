@@ -16,7 +16,7 @@
     margin: 5px;
 }
 .List-input input{
-    padding: 15px 200px 15px 15px;
+    padding: 15px 224px 15px 15px;
     border: none;
     font-size: 16px;
 }
@@ -37,13 +37,7 @@
     display: flex;
 
 }
-.note{
-    /* width: 180px;
-    height: 180px;
-    border: 1px solid; */
-    /* padding: 5px; */
-    /* margin: 4px 0px */
-}
+
 .options {
     width: 240px;
     /* height: 172px; */
@@ -72,6 +66,15 @@
 .date button{
     padding: 5px 10px;
 }
+.Accordians{
+  margin: 2px 10px;
+}
+.input-text{
+  border: none;
+  /* padding: 5px 20px 5px 10px; */
+  width: 150px;
+  font-size: 20px;
+}
 
 
 
@@ -81,7 +84,7 @@
 
 
 
-
+/* Calendar */
 Sample input,
 .Sample button {
   font: inherit;
