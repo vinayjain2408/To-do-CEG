@@ -1,12 +1,24 @@
-import React, { useState } from "react";
+import React, { useState ,useEffect } from "react";
 import "./Todo.css";
 import { useNavigate } from "react-router-dom";
 
 function Todo() {
   const [buttonValue, setbuttonvalue] = useState(false);
   const [inputvalue, setInputValue] = useState("");
-  const [arry, setArry] = useState([]);
   const navigate = useNavigate();
+
+  const [arry, setArry] = useState(
+    (localStorage.getItem('arry') === null) 
+      ? []
+      : JSON.parse(localStorage.getItem('arry')) 
+  );
+ 
+  useEffect(() => {
+    localStorage.setItem("arry", JSON.stringify(arry));
+  }, [arry]);
+
+
+
 
   const handleButton = () => {
     setbuttonvalue(true);
@@ -29,8 +41,11 @@ function Todo() {
   };
 
   const handlepath = (data) => {
-    navigate(`/list-detail/${data}`);
+    navigate(`/list-detail/`,{state : data});
   };
+  // const handlepath = (data) => {
+  //   navigate(`/list-detail/${data}`);
+  // };
 
   return (
     <div className="task-body">

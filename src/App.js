@@ -11,7 +11,8 @@ function App() {
      <Navbar />
       <Routes>
         <Route path='/' element={<Home />}/>
-        <Route path='/list-detail/:inputvalue' element={<Detail />}/>
+        <Route path='/list-detail' element={<Detail />}/>
+        {/* <Route path='/list-detail/:inputvalue' element={<Detail />}/> */}
       </Routes>
     </BrowserRouter>
   );

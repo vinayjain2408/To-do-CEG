@@ -38,10 +38,10 @@
 
 }
 .note{
-    width: 180px;
+    /* width: 180px;
     height: 180px;
-    border: 1px solid;
-    padding: 5px;
+    border: 1px solid; */
+    /* padding: 5px; */
     /* margin: 4px 0px */
 }
 .options {
@@ -61,7 +61,7 @@
 }
 .options button {
     position: absolute;
-    top: 105px;
+    top: 80px;
     right: -10px;
     background-color: red;
     color: #fff;
