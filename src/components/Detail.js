@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useEffect } from "react";
 import AddIcon from "@mui/icons-material/Add";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
@@ -10,7 +10,15 @@ import "./Detail.css";
 
 function Detail() {
   const [inputValue, setInputValue] = useState("");
-  const [inputList, setInputList] = useState([]);
+  const [inputList, setInputList] = useState(
+    localStorage.getItem("inputList") === null
+    ? []
+    : JSON.parse(localStorage.getItem("inputList"))
+  );
+  
+  useEffect(() => {
+    localStorage.setItem("inputList", JSON.stringify(inputList));
+  }, [inputList]);
 
   const handleclick = () => {
     // setAdding(true);
